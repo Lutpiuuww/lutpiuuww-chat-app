@@ -30,7 +30,7 @@ function App() {
     const safeUsername = encodeURIComponent(username);
     
     // LINK WEBSOCKET (Pastikan pakai wss:// dan alamat ngrok backend kamu)
-    const ws = new WebSocket(`wss://charier-patsy-cirrhotic.ngrok-free.dev/ws/${safeRoomId}/${safeUsername}`);
+    const ws = new WebSocket(`wss://lutpiuuww-lutpiuuww-backend.hf.space/ws/${safeRoomId}/${safeUsername}`);
 
     ws.onopen = () => console.log(`Joined room: ${currentRoom}`);
     ws.onmessage = (event) => {
@@ -70,12 +70,10 @@ function App() {
 
     try {
       // Fetch ke alamat ngrok backend (https)
-      const response = await fetch("https://charier-patsy-cirrhotic.ngrok-free.dev/upload", { 
+      const response = await fetch("https://lutpiuuww-lutpiuuww-backend.hf.space/upload", {
+// ... sisanya sama 
         method: "POST", 
         body: formData,
-        headers: {
-            "ngrok-skip-browser-warning": "true" // Header Anti-Blokir
-        }
       });
       
       const data = await response.json();
