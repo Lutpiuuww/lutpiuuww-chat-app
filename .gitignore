@@ -1,0 +1,14 @@
+# Abaikan folder virtual environment
+venv/
+env/
+
+# Abaikan file cache Python
+__pycache__/
+*.pyc
+
+# Abaikan Database lokal
+*.db
+*.sqlite3
+
+# Abaikan file sistem
+.DS_Store
